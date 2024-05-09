@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../resources/css/bootstrap.css">
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/css/remixicon/remixicon.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>HELEN CLASSIC - Add Customer</title>
+    
+</head>
+<body>
+
+  <div class="main">
+    
+    <!-- =============== Navigation ================ -->
+      <div class="sidebar">
+  
+       <!-- The logo and the name goes start here -->
+       <ul>
+        <li style="display: flex;">
+          <a href="../pages/dashboard.html">
+            <span class="h5 text-warning"><strong class="text-info">Helen</strong>Classic</span>
+          </a>
+        </li>
+        <!-- The logo and the name goes end here -->
+  
+        <!-- Dashboard link -->
+          <li>
+            <a href="../pages/dashboard.html">
+            <span class="icon">
+              <i class="ri-home-4-line" ></i>
+            </span>
+            <span class="title">Dashboard</span>
+          </a>
+          </li>
+        <!-- Dashboard link -->
+        
+        <!-- Customer link -->
+        <li>
+          <a href="../pages/customer.html">
+            <span class="icon">
+              <i class="ri-group-line"></i>
+            </span>
+            <span class="title">Customer</span> 
+          </a>
+        </li>
+
+        <!-- Product link -->
+        <li>
+          <a href="../pages/add_product.html">
+            <span class="icon">
+              <i class="ri-price-tag-3-line"></i>
+            </span>
+            <span class="title">Add Product</span> 
+          </a>
+        </li>
+        
+        <li>
+          <a href="../pages/view_product.html">
+          <span class="icon">
+            <i class="ri-eye-line"></i>
+          </span>
+          <span class="title">View Product</span> </a>
+        </li>
+            
+        <!-- Product link -->
+  
+        <!-- Sales goes here -->
+        <li>
+          <a href="../pages/add_sale.html">
+            <span class="icon">
+              <i class="ri-refund-2-line"></i>
+            </span>
+            <span class="title">Add Sales</span> 
+          </a>
+        </li>
+
+        <li>
+          <a href="../pages/view_sales.html">
+            <span class="icon">
+              <i class="ri-shopping-cart-2-line"></i>
+            </span>
+            <span class="title">View Sales</span> 
+          </a>
+        </li>
+         
+        <li>
+          <a href="../pages/logout.html">
+            <span class="icon">
+              <i class="ri-logout-box-r-fill" ></i>
+            </span>
+            <span class="title">Logout</span>
+          </a>
+        </li>
+        <!-- Logout ends here -->
+      
+      </ul>
+      
+          
+        
+      </div>
+    <!-- Navbar End here -->
+  
+    <!-- Main body start here -->
+      <div class="main-body">
+        <div class="container-fluid p-0 mb-5">
+
+          <!-- Header  -->
+          <div class="search d-flex justify-content-between">
+            <!-- search box -->
+            <div class="col">
+              <span class="icon">
+                <i class="ri-menu-line toggle"  style="font-size: 25px;"></i>
+              </span>
+            </div>
+            <div class="search-box col-md-4">
+              <form action="post">
+                <div class="input-group input-group-sm">
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Search here">
+                  <input type="submit" class="input-group-text btn btn-primary" id="inputGroup-sizing-sm" value="Search">
+                </div> 
+              </form>
+              
+            </div>
+            <!-- search box -->
+
+            <!-- User details -->
+            <div class="user-details col-md-4 d-flex justify-content-end align-items-center">
+              <h5 class="m-0 d-flex align-items-center">Hey, Admin</h5>
+              <img src="../images/02.jpg" alt="user" width="40px" height="auto" class="ms-3">
+            </div>
+            <!-- User details -->
+          </div>
+          <!-- Header  -->
+        </div>
+
+        <div class="container-fluid px-5">
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title h4 m-0 p-3">Add Customer</p>
+                </div>
+
+                <div class="card-body mt-3">
+                    <form action="" method="post" class="row m-0 g-2 needs-validation" novalidate>
+                
+                            <div class="row p-0 m-0 mb-3">
+                                    <div class="col-md-6">
+                                      <label class="form-label mb-2" for="validationCustom01">Full Name</label>
+                                      <input type="text" class="form-control" id="validationCustom01" required>
+                                      <div class="invalid-feedback">
+                                          Please check your input and input correct details.
+                                        </div>
+                                        <div class="valid-feedback">
+                                          Looks good!
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-6 ">
+                                        <label class="form-label mb-2" for="validationCustom02">E-mail</label>
+                                      <input type="email" class="form-control" id="validationCustom02" required>
+                                      <div class="invalid-feedback">
+                                          Please check your input and input correct details.
+                                        </div>
+                                        <div class="valid-feedback">
+                                          Looks good!
+                                        </div>
+                                    </div>
+                                    
+                                
+                            </div>
+    
+                            <div class="row p-0 m-0 mb-3">
+                                <div class="col-md-4">
+                                    <label class="form-label mb-2" for="validationCustom03">Phone Number</label>
+                                  <input type="nummber" class="form-control" id="validationCustom03" required>
+                                  <div class="invalid-feedback">
+                                      Please check your input and input correct details.
+                                    </div>
+                                    <div class="valid-feedback">
+                                      Looks good!
+                                    </div>
+                                </div>
+    
+                                <div class="col-md-4">
+                                    <label class="form-label mb-2" for="validationCustom04">City</label>
+                                  <input type="text" class="form-control" id="validationCustom04" required>
+                                  <div class="invalid-feedback">
+                                      Please check your input and input correct details.
+                                    </div>
+                                    <div class="valid-feedback">
+                                      Looks good!
+                                    </div>
+                                </div>
+    
+                                <div class="col-md-4">
+                                    <label class="form-label mb-2" for="validationCustom05">State</label>
+                                  <input type="text" class="form-control" id="validationCustom05" required>
+                                  <div class="invalid-feedback">
+                                      Please check your input and input correct details.
+                                    </div>
+                                    <div class="valid-feedback">
+                                      Looks good!
+                                    </div>
+                                </div>
+                                
+                            
+                            </div>
+
+                            <div class="row p-0 m-0 mb-3">
+                            <div class="col">
+                              <label class="form-label mb-2" for="validationCustom06">Address</label>
+                              <textarea class="form-control" id="validationCustom06" rows="4" required></textarea>
+                              <div class="invalid-feedback">
+                                  Please check your input and input correct details.
+                                </div>
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                            </div>
+                            </div>
+                              
+                            <div class="row p-0 m-0 mb-3">
+                              <div class="col-md-3 col-sm-6 mb-2">
+                                <input type="submit" value="Add Product" name="addProduct" class="btn btn-success w-100">
+                              </div>
+                              <div class="col-md-2 col-sm-6 mb-2">
+                                <input type="submit" value="Reset" name="addProduct" class="btn btn-danger w-100">
+                              </div>
+                            </div>
+                        
+                        
+                </form>
+                </div>
+                
+            </div>
+            <div class="mt-4">
+                
+                   
+                    
+                </div>
+            </div>
+        </div>
+      </div>
+
+  <script src="../resources/js/jquery.js"></script>
+  <script src="../resources/js/popper.js"></script>
+  <script src="../resources/js/bootstrap.min.js"></script>
+  <script src="../resources/js/chart.umd.js"></script>
+  <script src="../resources/js/custom-chart.js"></script>
+  <script src="../assets/js/script.js"></script>
+  <script>
+    
+  </script>
+ 
+</body>
+</html>

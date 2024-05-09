@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../resources/css/bootstrap.css">
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/css/remixicon/remixicon.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>HELEN CLASSIC - Add Sales</title>
+    
+</head>
+<body>
+
+  <div class="main">
+    
+    <!-- =============== Navigation ================ -->
+      <div class="sidebar">
+  
+       <!-- The logo and the name goes start here -->
+       <ul>
+        <li style="display: flex;">
+          <a href="../pages/dashboard.html">
+            <span class="h5 text-warning"><strong class="text-info">Helen</strong>Classic</span>
+          </a>
+        </li>
+        <!-- The logo and the name goes end here -->
+  
+        <!-- Dashboard link -->
+          <li>
+            <a href="../pages/dashboard.html">
+            <span class="icon">
+              <i class="ri-home-4-line" ></i>
+            </span>
+            <span class="title">Dashboard</span>
+          </a>
+          </li>
+        <!-- Dashboard link -->
+        
+        <!-- Customer link -->
+        <li>
+          <a href="../pages/customer.html">
+            <span class="icon">
+              <i class="ri-group-line"></i>
+            </span>
+            <span class="title">Customer</span> 
+          </a>
+        </li>
+
+        <!-- Product link -->
+        <li>
+          <a href="../pages/add_product.html">
+            <span class="icon">
+              <i class="ri-price-tag-3-line"></i>
+            </span>
+            <span class="title">Add Product</span> 
+          </a>
+        </li>
+        
+        <li>
+          <a href="../pages/view_product.html">
+          <span class="icon">
+            <i class="ri-eye-line"></i>
+          </span>
+          <span class="title">View Product</span> </a>
+        </li>
+            
+        <!-- Product link -->
+  
+        <!-- Sales goes here -->
+        <li>
+          <a href="../pages/add_sale.html">
+            <span class="icon">
+              <i class="ri-refund-2-line"></i>
+            </span>
+            <span class="title">Add Sales</span> 
+          </a>
+        </li>
+
+        <li>
+          <a href="../pages/view_sales.html">
+            <span class="icon">
+              <i class="ri-shopping-cart-2-line"></i>
+            </span>
+            <span class="title">View Sales</span> 
+          </a>
+        </li>
+         
+        <li>
+          <a href="../pages/logout.html">
+            <span class="icon">
+              <i class="ri-logout-box-r-fill" ></i>
+            </span>
+            <span class="title">Logout</span>
+          </a>
+        </li>
+        <!-- Logout ends here -->
+      
+      </ul>
+      
+          
+        
+      </div>
+    <!-- Navbar End here -->
+  
+    <!-- Main body start here -->
+      <div class="main-body">
+        <div class="container-fluid p-0">
+
+          <!-- Header  -->
+          <div class=" search  d-flex justify-content-between">
+            <!-- search box -->
+            <div class="col">
+              <span class="icon">
+                <i class="ri-menu-line toggle"  style="font-size: 25px;"></i>
+              </span>
+            </div>
+            <div class="search-box col-md-4">
+              <form action="post">
+                <div class="input-group input-group-sm">
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Search here">
+                  <input type="submit" class="input-group-text btn btn-primary" id="inputGroup-sizing-sm" value="Search">
+                </div> 
+              </form>
+              
+            </div>
+            <!-- search box -->
+
+            <!-- User details -->
+            <div class="user-details col-md-4 d-flex justify-content-end align-items-center">
+              <h5 class="m-0 d-flex align-items-center">Hey, Admin</h5>
+              <img src="../images/02.jpg" alt="user" width="40px" height="auto" class="ms-3">
+            </div>
+            <!-- User details -->
+          </div>
+          <!-- Header  -->
+        </div>
+
+        <div class="container-fluid">
+            <div class="card m-5">
+                <div class="card-header">
+                    <div class="header-title p-2">
+                        <h4 class="card-title">Add Sales</h4>
+                    </div>
+                </div>
+                <div class="card-body mt-3">
+                    <form action="" method="post" class="row m-0 g-2 needs-validation" novalidate>
+                        <div class="row mb-3">
+                          <div class="col mb-2">
+                            <label for="customername" class="mb-2 form-label">Customer Name</label>
+                            <input class="form-select" list="op_customer_name" id="customername" placeholder="Type the customer name ..." autocomplete="off" required>
+                              <datalist id="op_customer_name">  
+                                <option value="Yusuf">
+                                <option value="Ayo">
+                              </datalist>
+                              <div class="invalid-feedback">
+                                  Please check your input and input correct details.
+                                </div>
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mb-3">
+                          <div class="col mb-2">
+                            <label class="form-label mb-2" for="select_product">Select Product*</label>
+                            <input type="text" list="op_product_name" class="form-control" id="select_product" placeholder="Type the product name ..." autocomplete="off" required>
+                              <datalist id="op_product_name">  
+                                <option value="G0C300 - Gucci Bag">
+                                <option value="WR-12 - Wrist Watch">
+                              </datalist>
+                              <div class="invalid-feedback">
+                                Please check your input and input correct details.
+                              </div>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="row mb-3">
+                          <div class="col-md-6 mb-2">
+                            <label class="form-label mb-2" for="sales_quantity">Quantity *</label>
+                            <input type="number" class="form-control" id="sales_quantity" required>
+                              <div class="invalid-feedback">
+                                Please check your input and input correct details.
+                              </div>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                          </div>
+
+                          <div class="col-md-6 mb-2">
+                            <label class="form-label mb-2" for="sales_price">Price *</label>
+                            <input type="number" class="form-control" id="sales_price" value="3000" disabled>
+                          </div>
+                        </div>
+
+                        <div class="row p-0 m-0 mb-3">
+                          <div class="col-md-3 col-sm-6 mb-2">
+                            <button type="button" onclick="addToSales()" class="btn btn-success w-100">Add to Sales </button>
+                          </div>
+                          <div class="col-md-3 col-sm-6 mb-2">
+                            <!-- <input type="submit" value="Add Product" name="addProduct" class="btn btn-success w-100"> -->
+                          </div>
+                        </div>
+
+                      <div class="p-4 mt-3">
+                        <h4 class="card-title">Selected Product</h4>
+                        <table id="salesTable" class="table table-hover table-bordered">
+                          <thead class="table-dark">
+                              <tr>
+                                  <th>Product</th>
+                                  <th>Quantity</th>
+                                  <th>Cost</th>
+                                  <th>Price</th>
+                              </tr>
+                          </thead>
+                          <tbody id="salesTableBody">
+                              <!-- Display selected products here -->
+                          </tbody>
+                      </table>
+                      </div>
+
+
+                          
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+      </div>
+
+  <script src="../resources/js/jquery.js"></script>
+  <script src="../resources/js/popper.js"></script>
+  <script src="../resources/js/bootstrap.min.js"></script>
+  <script src="../resources/js/chart.umd.js"></script>
+  <script src="../resources/js/custom-chart.js"></script>
+  <script src="../assets/js/script.js"></script>
+  <script>
+    
+  </script>
+ 
+</body>
+</html>

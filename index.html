@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="resources/css/bootstrap.css">
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>HELEN CLASSIC - Sign In</title>
+</head>
+<body>
+    <!-- Login -->
+    <section id="hero">
+
+        <canvas id="canvas"></canvas>
+        <div class="wrapper">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-8 ">
+                        <div class="card pt-4">
+                            <div class="card-body d-flex">
+                                <div class="col-lg-7 col-md-12">
+                                    <div class="p-3">
+                                        <h2>Sign In!</h1>
+                                        <p>Login to stay connected</p>
+                                        <form action="" method="post">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="form-floating form-group mb-3">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                                        <label for="floatingInput">Email address</label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="form-floating form-group mb-3">
+                                                        <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                                        <label for="floatingInput">Password</label>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                                <a href="pages/dashboard.html" class="btn btn-primary">Log In</a>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 p-4 d-none d-lg-block">
+                                    <img src="images/01.png" alt="login" class="img-fluid ">
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- script JS -->
+    <script src="resources/js/popper.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+    <script src="resources/js/starback.global.js"></script>
+    <script>
+    
+        const starback = new Starback("#canvas", {
+        width: document.body.clientWidth,
+        height: document.body.clientHeight,
+        type: 'line',
+        speed: 5,
+        frequency: 5,
+        slope: { x: -1, y: 10 },
+        directionX: 1,
+        speed: 3,
+        spread: -10,
+        randomOpacity: true,
+        backgroundColor: ['#0F2027', '#203A43', '#2C5364'],
+        quantity: 30,
+        });
+
+        let mountain = new Image();
+        mountain.src = 'images/mountain2.png';
+
+        mountain.onload = () => {
+        starback.addToFront((ctx) => {
+            ctx.drawImage(
+            mountain,
+            0,
+            0,
+            mountain.width,
+            mountain.height,
+            0,
+            canvas.height - mountain.height,
+            canvas.width,
+            mountain.height
+            );
+        });
+        }
+    
+        
+      </script>
+    
+
+</body>
+</html>

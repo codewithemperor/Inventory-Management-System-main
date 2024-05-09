@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../resources/css/bootstrap.css">
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/css/remixicon/remixicon.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>HELEN CLASSIC - Customer</title>
+    
+</head>
+<body>
+
+  <div class="main">
+    
+    <!-- =============== Navigation ================ -->
+      <div class="sidebar">
+  
+       <!-- The logo and the name goes start here -->
+       <ul>
+        <li style="display: flex;">
+          <a href="../pages/dashboard.html">
+            <span class="h5 text-warning"><strong class="text-info">Helen</strong>Classic</span>
+          </a>
+        </li>
+        <!-- The logo and the name goes end here -->
+  
+        <!-- Dashboard link -->
+          <li>
+            <a href="../pages/dashboard.html">
+            <span class="icon">
+              <i class="ri-home-4-line" ></i>
+            </span>
+            <span class="title">Dashboard</span>
+          </a>
+          </li>
+        <!-- Dashboard link -->
+        
+        <!-- Customer link -->
+        <li>
+          <a href="../pages/customer.html">
+            <span class="icon">
+              <i class="ri-group-line"></i>
+            </span>
+            <span class="title">Customer</span> 
+          </a>
+        </li>
+
+        <!-- Product link -->
+        <li>
+          <a href="../pages/add_product.html">
+            <span class="icon">
+              <i class="ri-price-tag-3-line"></i>
+            </span>
+            <span class="title">Add Product</span> 
+          </a>
+        </li>
+        
+        <li>
+          <a href="../pages/view_product.html">
+          <span class="icon">
+            <i class="ri-eye-line"></i>
+          </span>
+          <span class="title">View Product</span> </a>
+        </li>
+            
+        <!-- Product link -->
+  
+        <!-- Sales goes here -->
+        <li>
+          <a href="../pages/add_sale.html">
+            <span class="icon">
+              <i class="ri-refund-2-line"></i>
+            </span>
+            <span class="title">Add Sales</span> 
+          </a>
+        </li>
+
+        <li>
+          <a href="../pages/view_sales.html">
+            <span class="icon">
+              <i class="ri-shopping-cart-2-line"></i>
+            </span>
+            <span class="title">View Sales</span> 
+          </a>
+        </li>
+         
+        <li>
+          <a href="../pages/logout.html">
+            <span class="icon">
+              <i class="ri-logout-box-r-fill" ></i>
+            </span>
+            <span class="title">Logout</span>
+          </a>
+        </li>
+        <!-- Logout ends here -->
+      
+      </ul>
+      
+          
+        
+      </div>
+    <!-- Navbar End here -->
+  
+    <!-- Main body start here -->
+      <div class="main-body">
+        <div class="container-fluid p-0 mb-5">
+
+          <!-- Header  -->
+          <div class="search d-flex justify-content-between">
+            <!-- search box -->
+            <div class="col">
+              <span class="icon">
+                <i class="ri-menu-line toggle"  style="font-size: 25px;"></i>
+              </span>
+            </div>
+            <div class="search-box col-md-4">
+              <form action="post">
+                <div class="input-group input-group-sm">
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Search here">
+                  <input type="submit" class="input-group-text btn btn-primary" id="inputGroup-sizing-sm" value="Search">
+                </div> 
+              </form>
+              
+            </div>
+            <!-- search box -->
+
+            <!-- User details -->
+            <div class="user-details col-md-4 d-flex justify-content-end align-items-center">
+              <h5 class="m-0 d-flex align-items-center">Hey, Admin</h5>
+              <img src="../images/02.jpg" alt="user" width="40px" height="auto" class="ms-3">
+            </div>
+            <!-- User details -->
+          </div>
+          <!-- Header  -->
+        </div>
+
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-8">
+                    <p class="heading">Customer List</p>
+                    <p class="paragraph">A customer dashboard lets you easily gather and visualize customer data from optimizing
+                        the customer experience, ensuring customer retention.</p>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-end">
+                    <a href="add_customer.html" class="btn bg-primary text-white">
+                        <i class="ri-add-line"></i>
+                        Add Customer</a>
+                </div>
+            </div>
+            <div class="mt-4">
+                <table class="table  table-hover  ">
+                    <thead class="table-dark ">
+                        <tr>
+                            <th class="py-3">Customer ID</th>
+                            <th class="py-3">Full Name</th>
+                            <th class="py-3">Phone Number</th>
+                            <th class="py-3">E-mail</th>
+                            <th class="py-3">City</th>
+                            <th class="py-3">Status</th>
+                            <th class="py-3">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3">192381</td>
+                            <td class="py-3">Sulaimon Yusuf Ayomide</td>
+                            <td class="py-3">08054194279</td>
+                            <td class="py-3">2016.ayomide77yusuf@gmail.com</td>
+                            <td class="py-3">Ibadan</td>
+                            <td class="py-3">Paid</td>
+                            <td class="py-3">Paid</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">192381</td>
+                            <td class="py-3">Sulaimon Yusuf Ayomide</td>
+                            <td class="py-3">08054194279</td>
+                            <td class="py-3">2016.ayomide77yusuf@gmail.com</td>
+                            <td class="py-3">Ibadan</td>
+                            <td class="py-3">Paid</td>
+                            <td class="py-3">Paid</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">192381</td>
+                            <td class="py-3">Sulaimon Yusuf Ayomide</td>
+                            <td class="py-3">08054194279</td>
+                            <td class="py-3">2016.ayomide77yusuf@gmail.com</td>
+                            <td class="py-3">Ibadan</td>
+                            <td class="py-3">Paid</td>
+                            <td class="py-3">Paid</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">192381</td>
+                            <td class="py-3">Sulaimon Yusuf Ayomide</td>
+                            <td class="py-3">08054194279</td>
+                            <td class="py-3">2016.ayomide77yusuf@gmail.com</td>
+                            <td class="py-3">Ibadan</td>
+                            <td class="py-3">Paid</td>
+                            <td class="py-3">Paid</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">192381</td>
+                            <td class="py-3">Sulaimon Yusuf Ayomide</td>
+                            <td class="py-3">08054194279</td>
+                            <td class="py-3">2016.ayomide77yusuf@gmail.com</td>
+                            <td class="py-3">Ibadan</td>
+                            <td class="py-3">Paid</td>
+                            <td class="py-3">Paid</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">192381</td>
+                            <td class="py-3">Sulaimon Yusuf Ayomide</td>
+                            <td class="py-3">08054194279</td>
+                            <td class="py-3">2016.ayomide77yusuf@gmail.com</td>
+                            <td class="py-3">Ibadan</td>
+                            <td class="py-3">Paid</td>
+                            <td class="py-3">Paid</td>
+                        </tr>                        
+                    </tbody>
+                </table>
+                   
+                    
+                </div>
+            </div>
+        </div>
+      </div>
+
+  <script src="../resources/js/jquery.js"></script>
+  <script src="../resources/js/popper.js"></script>
+  <script src="../resources/js/bootstrap.min.js"></script>
+  <script src="../resources/js/chart.umd.js"></script>
+  <script src="../resources/js/custom-chart.js"></script>
+  <script src="../assets/js/script.js"></script>
+  <script>
+    
+  </script>
+ 
+</body>
+</html>
